@@ -23,7 +23,6 @@ h1 {
 h1 button {
     position: absolute;
     right: 0;
-    /* move the add new card button to the right  */
     transform: translate(120%, -50%);
     z-index: 2;
 }
@@ -31,7 +30,7 @@ h1 button {
 .btn {
     cursor: pointer;
     background-color: #fff;
-    border: 1px solid#aaa;
+    border: 1px solid #aaa;
     border-radius: 3px;
     font-size: 14px;
     margin-top: 20px;
@@ -43,7 +42,7 @@ h1 button {
     padding: 5px 10px;
 }
 
-.btn-small {
+.btn-ghost {
     border: 0;
     background-color: transparent;
 }
@@ -59,7 +58,6 @@ h1 button {
     position: relative;
     height: 300px;
     width: 500px;
-    /* make sure it doesent go out of the container  */
     max-width: 100%;
 }
 
@@ -71,7 +69,7 @@ h1 button {
     left: 0;
     height: 100%;
     width: 100%;
-    transform: translate(50%) rotateY(-10deg);
+    transform: translateX(50%) rotateY(-10deg);
     transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
@@ -79,11 +77,11 @@ h1 button {
     cursor: pointer;
     opacity: 1;
     z-index: 10;
-    transform: translate(0) rotateY(0deg);
+    transform: translateX(0) rotateY(0deg);
 }
 
 .card.left {
-    transform: translate(-50%) rotateY(10deg);
+    transform: translateX(-50%) rotateY(10deg);
 }
 
 .inner-card {
@@ -96,7 +94,6 @@ h1 button {
     transition: transform 0.4s ease;
 }
 
-/* rotte card 180deg on innder access  */
 .card.show-answer .inner-card {
     transform: rotateX(180deg);
 }

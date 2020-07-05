@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1467810563316-b5476525c0f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    /* get rid of scroll box  */
+    overflow: hidden;
+}
+
+/* make the image darker   */
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* create the darker background color  */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* setting the body to the z-index brings the
+ text foward so it no longer stayed in the back 
+ to the dark background  */
+body * {
+    z-index: 1;
+}
+
+h1 {
+    font-size: 60px;
+    margin: -80px 0 40px;
+}
+
+.year {
+    font-size: 200px;
+    /* send to back  */
+    z-index: -1;
+    opacity: 0.2;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    /* center  */
+    transform: translateX(-50%);
+
+}
+
+.countdown {
+    /* display: flex; */
+    display: none;
+    transform: scale(2);
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.time h2 {
+    margin: 0 0 5px;
+}
+
+/* add media query to ensure the screen size can adjust  */
+@media (max-width: 500px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    .time {
+        margin: 5px;
+    }
+
+    .time h2 {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .time small {
+        font-size: 10px;
+    }
+}

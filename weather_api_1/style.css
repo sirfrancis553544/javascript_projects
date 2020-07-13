@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    background: #224941;
+    /* image tabe up entire page */
+    min-height: 100vh;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+
+h1 {
+    position: relative;
+    color: #fff;
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    margin-bottom: 100px;
+}
+
+.weather-container {
+    position: absolute;
+    display: flexbox;
+    background-color: #144239;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    width: 500px;
+}
+
+
+.temp {
+    text-align: center;
+    font-size: 95px;
+    margin: 0;
+
+}
+
+.weather,
+.fl {
+    text-align: center;
+    font-size: 20px;
+}
+
+.city,
+.country {
+    text-align: right;
+    font-size: 20px;
+}
+
+/* search bar inout  */
+input {
+    border: 0;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 15px 30px;
+    width: 75%;
+    outline: none;
+}
+
+button {
+    /* position: absolute; */
+    top: 2px;
+    right: 2px;
+    background-color: #268f6f;
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 16px;
+    padding: 13px 30px;
+    /* outline: none; */
+}

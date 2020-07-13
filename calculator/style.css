@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background: #2f3542;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    /* margin-right: 150px;
+    margin-left: 20px; */
+}
+
+.number-container {
+    /* position: relative; */
+    top: 0;
+    left: 0;
+    background-color: #1f222b;
+    padding: 200px;
+    border-radius: 4px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 25px;
+    margin-top: 0px;
+}
+
+/* .myform {} */
+
+/* h1 {
+    text-align: center;
+    font-size: 80px;
+    margin-right: 150px;
+    margin-top: 20px;
+} */
+
+.display {
+    width: 350px;
+    height: 40px;
+    font-size: 45px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border-style: none;
+}
+
+.first .button,
+.second .button,
+.third .button,
+.forth .button {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+input[type="button"] {
+    background-color: gainsboro;
+    border-radius: 15px;
+    padding: 10px 24px;
+    font-size: 20px;
+    outline: none;
+    width: 23%;
+}

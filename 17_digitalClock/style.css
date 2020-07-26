@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(24, 195, 155, 0.7852183109571954) 45%,
+    rgba(80, 209, 179, 1) 54%
+  );
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.banner {
+  color: #fefefe;
+  font-size: 50px;
+  text-align: center;
+  background-color: #278366;
+  padding: 0.5em 0em;
+  width: 80%;
+  margin: 10% auto 0%;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+.clock-container {
+  color: #fff;
+  padding: 0.5em 0em;
+  width: 80%;
+  margin: 0px auto;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  box-shadow: 0 20px 20px 0 rgba(89, 89, 89, 0.6);
+}
+
+.clock {
+  color: #fff;
+  font-size: 100px;
+  text-align: center;
+  padding: 0.5em 0em;
+  margin: 5% auto 0%;
+}
+
+/* add media query to ensure the screen size can adjust  */
+@media (max-width: 600px) {
+  .banner {
+    font-size: 35px;
+  }
+  .clock-container {
+    margin: 5px;
+  }
+  .clock {
+    font-size: 50px;
+    margin: 0;
+  }
+}
